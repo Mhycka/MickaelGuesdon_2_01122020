@@ -33,6 +33,11 @@ ul
     padding: 0;
 }
 
+input
+{
+    padding :0;
+}
+
 /* Eléments principaux de la page */
 
 body
@@ -46,8 +51,22 @@ body
     margin: auto;
 }
 
+section h1, section h2, section h3, aside h2, aside h3, footer h3, footer a
+{
+    font-family: 'ralewaythin';
+    font-weight: normal;
+    text-transform: uppercase;
+}
 
 /* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'ralewaythin', 'ralewaythin_italic';
+}
 
 #logo
 {
@@ -64,7 +83,8 @@ body
 
 /* Navigation */
 
-nav ul {
+nav ul 
+{
     list-style-type: none;
     display: flex;
 }
@@ -72,14 +92,16 @@ nav ul {
 nav li
 {
     margin-right: 30px;
+    margin-left: 10px;
 }
 
 nav a
 {
     font-size: 0.8em;
     color: #181818;
-    padding-bottom: 10px;
+    padding-top: 40px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover
@@ -89,19 +111,42 @@ nav a:hover
 }
 
 
-
 /* Corps */
+
+#Filtres
+{
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.Filtres
+{
+    display: flex;
+    margin:0px;
+    width:20px;
+    background:#F2F2F2;
+    height:20px;
+    align-items: center;
+    border-radius:30px;
+    border-style: solid;
+    border-color: #F2F2F2; 
+    border-radius: 30px ;
+}
 
 section ul 
 {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 aside ul 
 {
     list-style-type: none;
     display: flex;
+    flex-direction: column;
 }
 
 /* Footer */

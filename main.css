@@ -38,6 +38,23 @@ input
     padding :0;
 }
 
+figure
+{
+    margin-inline-start: 0;
+}
+
+p
+{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h1
+{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 /* Eléments principaux de la page */
 
 body
@@ -55,7 +72,6 @@ section h1, section h2, section h3, aside h2, aside h3, footer h3, footer a
 {
     font-family: 'ralewaythin';
     font-weight: normal;
-    text-transform: uppercase;
 }
 
 /* Header */
@@ -64,21 +80,20 @@ header
 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
     font-family: 'ralewaythin', 'ralewaythin_italic';
 }
 
 #logo
 {
     display: flex;
-    flex-direction: row;
     align-items: baseline;
 }
 
 #logo img
 {
-    min-width: 50px;
-    height: 60px;
+    min-width: 40px;
+    height: 50px;
 }
 
 /* Navigation */
@@ -113,25 +128,112 @@ nav a:hover
 
 /* Corps */
 
+section h1
+{
+    font-weight: bolder;
+}
+
+h1
+{
+    margin-block-end: 0.3em;
+}
+
+.fa-map-marker-alt
+{
+    display: flex;
+    justify-content: center;
+    border-style: none;
+    background-color: #F2F2F2;
+    padding: 12px 15px 12px 20px;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+
+input
+{
+    height: 40px;
+    width: 160px;
+    border-right: none;
+    border-radius: 0px;
+    padding-left: 5px;
+    border-image: none;
+    border-color: #F2F2F2;
+    border-style: solid;
+}
+
+button
+{
+    background-color: #0065FC;
+    border-radius: 0px 10px 10px 0px;
+    border-style:none ;
+    height: 40px;
+    width: 90px;
+    color: white;
+}
+
 #Filtres
 {
     align-items: center;
     justify-content: space-between;
     width: 1000px;
+    font-weight: bold;
 }
-
-.Filtres
+section a
 {
-    display: flex;
+    border-style: solid;
+    border-color: #F2F2F2;
+    border-left: none;
+}
+.fa-money-bill-wave
+{
+    display:flex;
+    background-color: #DEEBFF;
     margin:0px;
-    width:20px;
-    background:#F2F2F2;
-    height:20px;
-    align-items: center;
+    width:30px;
+    height:30px;
     border-radius:30px;
     border-style: solid;
-    border-color: #F2F2F2; 
-    border-radius: 30px ;
+    border-color: #F2F2F2;
+    color: #0065FC;
+}
+
+.fa-child
+{
+    display:flex;
+    background-color: #DEEBFF;
+    margin:0px;
+    width:30px;
+    height:30px;
+    border-radius:30px;
+    border-style: solid;
+    border-color: #F2F2F2;
+    color: #0065FC;
+}
+
+.fa-heart
+{
+    display:flex;
+    background-color: #DEEBFF;
+    margin:0px;
+    width:30px;
+    height:30px;
+    border-radius:30px;
+    border-style: solid;
+    border-color: #F2F2F2;
+    color: #0065FC;
+}
+
+.fa-dog
+{
+    display:flex;
+    background-color: #DEEBFF;
+    margin:0px;
+    width:30px;
+    height:30px;
+    border-radius:30px;
+    border-style: solid;
+    border-color: #F2F2F2;
+    color: #0065FC;
 }
 
 section ul 

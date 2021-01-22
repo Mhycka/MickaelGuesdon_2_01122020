@@ -1,26 +1,4 @@
-/* Définition des polices personnalisées */
-
-@font-face 
-{
-    font-family: 'ralewaythin_italic';
-    src: url('fonts/raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
-         url('fonts/raleway-italic-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face 
-{
-    font-family: 'ralewaythin';
-    src: url('fonts/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('fonts/raleway-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-/* Réinitialiser */
+/* -------- Réinitialiser -------- */
 body 
 {
     margin : 0px;
@@ -31,6 +9,9 @@ body
 ul
 {
     padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    
 }
 
 input
@@ -69,35 +50,36 @@ li{
 a
 {
     text-decoration: none;
+    color: black;
 }
 
-/* Eléments principaux de la page */
+h2
+{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h3
+{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+/* -------- Eléments principaux de la page -------- */
 
 body
 {
-    font-family: 'ralewaythin', 'ralewaythin_italic';
+    font-family: 'Raleway', sans-serif;
 }
 
-#bloc_page
-{
-    width: 1200;
-    margin: auto;
-}
-
-section h1, section h2, section h3, aside h2, aside h3, footer h3, footer a , ul
-{
-    font-family: 'ralewaythin';
-    font-weight: normal;
-}
-
-/* Header */
+/* -------- Header -------- */
 
 header
 {
     display: flex;
     justify-content: space-between;
     align-items:center;
-    font-family: 'ralewaythin', 'ralewaythin_italic';
+    align-content: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 #logo
@@ -109,92 +91,156 @@ header
 #logo img
 {
     min-width: 40px;
-    height: 50px;
+    height: 60px;
 }
 
-/* Navigation */
+/* -------- Navigation -------- */
 
 nav ul 
 {
     list-style-type: none;
     display: flex;
+    margin-block-start: auto;
+    margin-inline-start: auto;
 }
 
 nav li
 {
     margin-right: 30px;
     margin-left: 10px;
+    padding-top: 0px;
 }
 
-nav a
+.hover
 {
-    font-size: 0.8em;
-    color: #181818;
-    padding-top: 40px;
+    font-size: 1.3em;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top: 3px solid white;
+}
+.hover a:hover
+{
+    color:#0065FC
 }
 
-nav a:hover
+.hover:hover
 {
-    color: #0065FC;
     border-top: 3px solid #0065FC;
 }
 
+#login
+{
+    font-size: 1.3em;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top: 3px solid white;
+}
 
-/* Corps */
+#login a
+{
+    color: #0065FC;
+}
+
+/* -------- Corps -------- */
+
+section ul 
+{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
 section h1
 {
-    font-weight: bolder;
-}
-
-h1
-{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
     margin-block-end: 0.3em;
+    font-size: 1.8em;
 }
 
-.fa-map-marker-alt
+section p
+{
+    font-size: 1.32em;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+#searchtool
+{
+    margin-bottom: 40px;
+}
+
+#Markmaper
 {
     display: flex;
     justify-content: center;
+    align-content: center;
+    align-items: center;
     border-style: none;
     background-color: #F2F2F2;
-    padding: 12px 15px 12px 20px;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 17px 0px 0px 17px;
+    height:63px;
+    width: 65px;
 }
 
 input
 {
-    height: 40px;
-    width: 160px;
+    height: 63px;
+    width: 310px;
     border-right: none;
     border-right-width: 0px;
     border-radius: 0px;
-    padding-left: 5px;
     border-image: none;
     border-color: #F2F2F2;
     border-style: solid;
-    font-weight: bold
+}
+
+::placeholder
+{
+    color: black;
+    font-weight: 700;
 }
 
 button
 {
     background-color: #0065FC;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 17px 17px 0px;
     border-style:none ;
-    height: 40px;
-    width: 90px;
+    height: 63px;
+    width: 180px;
     color: white;
+}
+.search
+{
+    font-size: 1.5em;
+    font-weight: 500;
+    color:black;
+    padding-left: 20px;
+    letter-spacing: auto;
+    word-spacing: 2px;
 }
 
 #Filtres
 {
     align-items: center;
     justify-content: space-between;
-    width: 1000px;
     font-style:normal;
-    font-weight: bolder;
+    font-weight: 600;
+    font-size: 1.65em;
+    padding-left: 10px;
+    margin-inline-end: 500px;
+    margin-bottom: 40px;
 }
 
 .filter
@@ -203,9 +249,10 @@ button
     align-items: center;
     justify-content: space-around;
     border-style: solid;
+    height:55px;
     border-radius: 30px 30px 30px 30px;
     border-color: #F2F2F2;
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 .circle
@@ -215,15 +262,15 @@ button
     align-items: center;
     background-color:#DEEBFF;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    margin: -2px;
+    width: 57px;
+    height: 57px;
+    margin: -7px;
 }
 
 a
 {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .fa-money-bill-wave
 {
@@ -235,21 +282,20 @@ a
 .fa-child
 {
     display:flex;
-    background-color: #DEEBFF;
     color: #0065FC;
 }
 
 .fa-heart
 {
     display:flex;
-    background-color: #DEEBFF;;
+    justify-content: center;
     color: #0065FC;
 }
 
 .fa-dog
 {
     display:flex;
-    background-color: #DEEBFF;
+    justify-content: center;
     color: #0065FC;
 }
 
@@ -259,6 +305,14 @@ a
     align-items: center;
     justify-content: flex start;
     font-style:normal;
+    padding-inline-start: 10px;
+    margin-bottom: 40px;
+}
+
+#text_info
+{
+    padding-inline-start: 10px;
+    font-size: 1.36em;
 }
 
 .circle_info
@@ -269,9 +323,8 @@ a
     border-style: solid;
     border-color: #F2F2F2;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    margin: -2px;
+    width: 25px;
+    height: 25px;
 }
 
 .fa-info
@@ -280,20 +333,271 @@ a
     color: #0065FC;
 }
 
-section ul 
+
+/* ---------- Main ---------- */
+
+strong
 {
-    list-style-type: none;
+    font-weight: 900;
+}
+
+h2
+{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 1.8em;
+    height:50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-aside ul 
+#bloc
 {
     list-style-type: none;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* Footer */
+#bloc_gauche
+{
+    display: flex;
+    justify-content: space-between;
+    border-style: none;
+    flex-wrap: wrap;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #F2F2F2;
+    width: 1125px;
+    height: 700px;
+    padding: 20px 50px 40px 50px;
+    margin: 20px;
+    
+}
+
+#Hebergements
+{
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.banniere
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 30px 20px;
+    width: 100%;
+    height: 70px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    background-color: white;
+    font-size: 1.1em;
+    text-align:left;
+    line-height: 1.5em;
+    list-style-type: none;
+    
+}
+.banniere h3
+{
+    padding-bottom: 5px;
+}
+
+#auberge
+{
+    display: flex;
+    height: 250px;
+    width: 320px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+    background: url(images/Auberge_la_Cannebiere_small.jpg) no-repeat top/100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+#Hotel_port
+{
+    display: flex;
+    height: 250px;
+    width: 320px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+    background: url(images/Hôtel_du_port.jpg) no-repeat top/100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+#Hotel_mouettes
+{
+    display: flex;
+    height: 250px;
+    width: 320px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+    background: url(images/Hôtel_les_mouettes.jpg) no-repeat top/100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+#Hotel_mer
+{
+    display: flex;
+    height: 250px;
+    width: 320px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+    background: url(images/Hôtel_de_la_mer.jpg) no-repeat top/100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+#Auberge_panier 
+{
+    display: flex;
+    height: 250px;
+    width: 320px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+    background: url(images/Auberge_le_panier.jpg) no-repeat top/100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+#Hotel_amina
+{
+    display: flex;
+    height: 250px;
+    width: 320px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+    background: url(images/Hôtel_chez_amina.jpg) no-repeat top/100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.fa-star
+{
+    display:flex;
+    color: #0065FC;
+}
+
+.grey_star
+{
+    display:flex;
+    color: #F2F2F2;
+}
+#bloc_gauche p
+{
+    font-size: 1.3em;
+    font-weight: 700;
+    padding-left: 5px;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+#bloc_droite
+{
+    display: flex;
+    justify-content: space-between;
+    border-style: none;
+    flex-wrap: wrap;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #F2F2F2;
+    width: 550px;
+    height: 700px;
+    padding: 20px 50px 40px 50px;
+    margin: 20px;
+}
+
+#Populaires
+{
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.banniere_droite
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 30px 30px 0px;
+    width: 60%;
+    height: 100%;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+    background-color: white;
+    font-size: 1.1em;
+    text-align:left;
+    line-height: 1.5em;
+    list-style-type: none; 
+}
+
+.banniere_droite ul
+{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+}
+
+#Hotel_soleil
+{
+    display: flex;
+    justify-content:flex-end;
+    height: 200px;
+    width: 500px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+    background: url(images/Hôtel_le_soleil.jpg) no-repeat ;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+#Coeur_eau
+{
+    display: flex;
+    justify-content:flex-end;
+    height: 200px;
+    width: 500px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+    background: url(images/Au_coeur_de_leau.jpg) no-repeat ;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+#Hotel_bleublanc
+{
+    display: flex;
+    justify-content:flex-end;;
+    height: 200px;
+    width: 500px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+    background: url(images/Hôtel_tout_bleu.jpg) no-repeat ;
+    position: relative;
+    margin-bottom: 25px;
+}
+/*  ---------- Footer  ---------- */
 

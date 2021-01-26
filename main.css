@@ -111,7 +111,7 @@ nav li
     padding-top: 0px;
 }
 
-.hover
+.hovernav
 {
     font-size: 1.3em;
     padding-top: 50px;
@@ -124,12 +124,12 @@ nav li
     margin-right: 5px;
     border-top: 3px solid white;
 }
-.hover a:hover
+.hovernav a:hover
 {
     color:#0065FC
 }
 
-.hover:hover
+.hovernav:hover
 {
     border-top: 3px solid #0065FC;
 }
@@ -253,6 +253,7 @@ button
     border-radius: 30px 30px 30px 30px;
     border-color: #F2F2F2;
     font-weight: 700;
+    margin: 5px;
 }
 
 .circle
@@ -368,12 +369,13 @@ h2
     flex-wrap: wrap;
     border-radius: 30px 30px 30px 30px;
     background-color: #F2F2F2;
-    width: 1125px;
+    width: 1100px;
     height: 700px;
     padding: 20px 50px 40px 50px;
     margin: 20px;
     
 }
+
 
 #Hebergements
 {
@@ -386,7 +388,7 @@ h2
 {
     position: absolute;
     bottom: 0;
-    border-radius: 0px 0px 30px 20px;
+    border-radius: 0px 0px 20px 20px;
     width: 100%;
     height: 70px;
     padding-left: 5px;
@@ -404,11 +406,23 @@ h2
     padding-bottom: 5px;
 }
 
+.hovercard li:hover
+{
+    opacity: 80%;
+    color: #0065FC;
+    padding: 0px;
+}
+
+a.hovercard 
+{
+    padding: 0px;
+}
+
 #auberge
 {
     display: flex;
-    height: 250px;
-    width: 320px;
+    height: 240px;
+    width: 310px;
     border-radius: 30px;
     border-style: solid;
     border-color: white;
@@ -421,8 +435,8 @@ h2
 #Hotel_port
 {
     display: flex;
-    height: 250px;
-    width: 320px;
+    height: 240px;
+    width: 310px;
     border-radius: 30px;
     border-style: solid;
     border-color: white;
@@ -435,8 +449,8 @@ h2
 #Hotel_mouettes
 {
     display: flex;
-    height: 250px;
-    width: 320px;
+    height: 240px;
+    width: 310px;
     border-radius: 30px;
     border-style: solid;
     border-color: white;
@@ -449,8 +463,8 @@ h2
 #Hotel_mer
 {
     display: flex;
-    height: 250px;
-    width: 320px;
+    height: 240px;
+    width: 310px;
     border-radius: 30px;
     border-style: solid;
     border-color: white;
@@ -463,8 +477,8 @@ h2
 #Auberge_panier 
 {
     display: flex;
-    height: 250px;
-    width: 320px;
+    height: 240px;
+    width: 310px;
     border-radius: 30px;
     border-style: solid;
     border-color: white;
@@ -477,8 +491,8 @@ h2
 #Hotel_amina
 {
     display: flex;
-    height: 250px;
-    width: 320px;
+    height: 240px;
+    width: 310px;
     border-radius: 30px;
     border-style: solid;
     border-color: white;
@@ -515,12 +529,18 @@ h2
     flex-wrap: wrap;
     border-radius: 30px 30px 30px 30px;
     background-color: #F2F2F2;
-    width: 550px;
+    width: 460px;
     height: 700px;
-    padding: 20px 50px 40px 50px;
-    margin: 20px;
+    padding: 20px 30px 40px 30px;
+    margin-top: 20px;
 }
 
+.fa-chart-line
+{
+    display: flex;
+    padding-top: 30px;
+    padding-right: 25px;
+}
 #Populaires
 {
     justify-content: space-between;
@@ -532,19 +552,26 @@ h2
 {
     position: absolute;
     bottom: 0;
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 0px 20px 20px 0px;
     width: 60%;
     height: 100%;
-    border-style: solid;
-    border-color: white;
-    border-width: 6px;
     background-color: white;
     font-size: 1.1em;
     text-align:left;
     line-height: 1.5em;
-    list-style-type: none; 
+    list-style-type: none;
+    padding-left: 20px;
+    padding-top: 5px;
 }
-
+.banniere_droite p
+{
+    padding-top: 10px;
+}
+.banniere_droite h3
+{
+    padding-bottom: 5px;
+    width: 200px;
+}
 .banniere_droite ul
 {
     list-style-type: none;
@@ -552,52 +579,51 @@ h2
     align-items: flex-end;
     position: absolute;
     bottom: 0;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 #Hotel_soleil
 {
     display: flex;
     justify-content:flex-end;
-    height: 200px;
-    width: 500px;
+    height: 160px;
+    width: 430px;
     border-radius: 30px;
     border-style: solid;
     border-color: white;
     border-width: 6px;
-    background: url(images/Hôtel_le_soleil.jpg) no-repeat ;
+    background: url(images/Hôtel_le_soleil.jpg) no-repeat left/60% ;
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 #Coeur_eau
 {
     display: flex;
     justify-content:flex-end;
-    height: 200px;
-    width: 500px;
+    height: 160px;
+    width: 430px;
     border-radius: 30px;
     border-style: solid;
     border-color: white;
     border-width: 6px;
-    background: url(images/Au_coeur_de_leau.jpg) no-repeat ;
+    background: url(images/Au_coeur_de_leau.jpg) no-repeat left/50% ;
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 #Hotel_bleublanc
 {
     display: flex;
     justify-content:flex-end;;
-    height: 200px;
-    width: 500px;
+    height: 160px;
+    width: 430px;
     border-radius: 30px;
     border-style: solid;
     border-color: white;
     border-width: 6px;
-    background: url(images/Hôtel_tout_bleu.jpg) no-repeat ;
+    background: url(images/Hôtel_tout_bleu.jpg) no-repeat left/40% ;
     position: relative;
-    margin-bottom: 25px;
 }
 /*  ---------- Footer  ---------- */
 

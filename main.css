@@ -427,9 +427,11 @@ a.hovercard
     border-style: solid;
     border-color: white;
     border-width: 6px;
-    background: url(images/Auberge_la_Cannebiere_small.jpg) no-repeat top/100%;
+    background: url(images/Auberge_la_Cannebiere_small.jpg) no-repeat;
+    background-size: 320px 150px;
     position: relative;
     margin-bottom: 25px;
+    box-shadow: 1px 1px 5px grey;
 }
 
 #Hotel_port
@@ -441,9 +443,11 @@ a.hovercard
     border-style: solid;
     border-color: white;
     border-width: 6px;
-    background: url(images/Hôtel_du_port.jpg) no-repeat top/100%;
+    background: url(images/Hôtel_du_port.jpg) no-repeat top;
+    background-size: 320px 170px;
     position: relative;
     margin-bottom: 25px;
+    box-shadow: 1px 1px 5px grey;
 }
 
 #Hotel_mouettes
@@ -455,9 +459,11 @@ a.hovercard
     border-style: solid;
     border-color: white;
     border-width: 6px;
-    background: url(images/Hôtel_les_mouettes.jpg) no-repeat top/100%;
+    background: url(images/Hôtel_les_mouettes.jpg) no-repeat;
+    background-size: 330px 180px;
     position: relative;
     margin-bottom: 25px;
+    box-shadow: 1px 1px 5px grey;
 }
 
 #Hotel_mer
@@ -469,9 +475,11 @@ a.hovercard
     border-style: solid;
     border-color: white;
     border-width: 6px;
-    background: url(images/Hôtel_de_la_mer.jpg) no-repeat top/100%;
+    background: url(images/Hôtel_de_la_mer.jpg) no-repeat;
+    background-size: 310px 170px ;
     position: relative;
     margin-bottom: 25px;
+    box-shadow: 1px 1px 5px grey;
 }
 
 #Auberge_panier 
@@ -483,9 +491,11 @@ a.hovercard
     border-style: solid;
     border-color: white;
     border-width: 6px;
-    background: url(images/Auberge_le_panier.jpg) no-repeat top/100%;
+    background: url(images/Auberge_le_panier.jpg) no-repeat;
+    background-size: 320px 160px;
     position: relative;
     margin-bottom: 25px;
+    box-shadow: 1px 1px 5px grey;
 }
 
 #Hotel_amina
@@ -497,9 +507,11 @@ a.hovercard
     border-style: solid;
     border-color: white;
     border-width: 6px;
-    background: url(images/Hôtel_chez_amina.jpg) no-repeat top/100%;
+    background: url(images/Hôtel_chez_amina.jpg) no-repeat;
+    background-size: 320px 210px;
     position: relative;
     margin-bottom: 25px;
+    box-shadow: 1px 1px 5px grey;
 }
 
 .fa-star
@@ -595,6 +607,7 @@ a.hovercard
     background: url(images/Hôtel_le_soleil.jpg) no-repeat left/60% ;
     position: relative;
     margin-bottom: 35px;
+    box-shadow: 1px 1px 5px grey;
 }
 
 #Coeur_eau
@@ -610,6 +623,7 @@ a.hovercard
     background: url(images/Au_coeur_de_leau.jpg) no-repeat left/50% ;
     position: relative;
     margin-bottom: 35px;
+    box-shadow: 1px 1px 5px grey;
 }
 
 #Hotel_bleublanc
@@ -624,6 +638,92 @@ a.hovercard
     border-width: 6px;
     background: url(images/Hôtel_tout_bleu.jpg) no-repeat left/40% ;
     position: relative;
+    box-shadow: 1px 1px 5px grey;
 }
+
+.banniere2
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 20px 20px;
+    width: 100%;
+    height: 70px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    background-color: white;
+    font-size: 1.1em;
+    text-align:left;
+    line-height: 1.5em;
+    list-style-type: none;
+}
+
+#vieux_port
+{
+    display: flex;
+    height: 500px;
+    width: 310px;
+    background: url(images/Vieux_port.jpg) no-repeat left;
+    background-size: 1000px 500px ;
+    position: relative;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+#Fort_promegues
+{
+    display: flex;
+    height: 300px;
+    width: 310px;
+    background: url(images/Fort_Promègues.jpg) no-repeat top/100%;
+    position: relative;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+#iles_frioul
+{
+    display: flex;
+    height: 240px;
+    width: 310px;
+    background: url(images/Iles_Frioul.jpg) no-repeat top/100%;
+    position: relative;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+#calanques
+{
+    display: flex;
+    height: 240px;
+    width: 310px;
+    background: url(images/Parc_Calanques.jpg) no-repeat top/100%;
+    position: relative;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+#lagarde
+{
+    display: flex;
+    height: 240px;
+    width: 310px;
+    background: url(images/Notre_Dame_de_la_Garde.jpg) no-repeat top/100%;
+    position: relative;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+#Longchamp
+{
+    display: flex;
+    height: 240px;
+    width: 310px;
+    background: url(images/Parc_Longchamp.jpg) no-repeat top/100%;
+    position: relative;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 5px grey;
+}
+
 /*  ---------- Footer  ---------- */
 

@@ -66,9 +66,19 @@ h3
 }
 /* -------- Eléments principaux de la page -------- */
 
+html
+{
+    height: 100%;
+}
+
 body
 {
     font-family: 'Raleway', sans-serif;
+    height:100%;
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* -------- Header -------- */
@@ -80,6 +90,8 @@ header
     align-items:center;
     align-content: center;
     font-family: 'Raleway', sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #logo
@@ -152,6 +164,12 @@ nav li
 }
 
 /* -------- Corps -------- */
+
+#sectionsearch
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
 section ul 
 {
@@ -359,6 +377,9 @@ h2
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #bloc_gauche
@@ -369,11 +390,10 @@ h2
     flex-wrap: wrap;
     border-radius: 30px 30px 30px 30px;
     background-color: #F2F2F2;
-    width: 1100px;
+    width: 1130px;
     height: 700px;
     padding: 20px 50px 40px 50px;
-    margin: 20px;
-    
+    margin: 20px 0px 20px 0px;
 }
 
 
@@ -395,6 +415,7 @@ h2
     padding-bottom: 15px;
     padding-top: 5px;
     background-color: white;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.1em;
     text-align:left;
     line-height: 1.5em;
@@ -641,89 +662,143 @@ a.hovercard
     box-shadow: 1px 1px 5px grey;
 }
 
+#sectionactivite
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#Activites
+{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column;
+    flex-wrap:wrap;
+    height: 550px;
+    margin-bottom: 50px;
+}
+
 .banniere2
 {
     position: absolute;
     bottom: 0;
     border-radius: 0px 0px 20px 20px;
     width: 100%;
-    height: 70px;
-    padding-left: 5px;
-    padding-bottom: 15px;
-    padding-top: 5px;
+    height: 60px;
     background-color: white;
-    font-size: 1.1em;
-    text-align:left;
-    line-height: 1.5em;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1em;
     list-style-type: none;
+}
+
+.banniere2 p
+{
+    margin: 0px;
+    padding: 20px 0px 10px 20px;
 }
 
 #vieux_port
 {
     display: flex;
-    height: 500px;
-    width: 310px;
-    background: url(images/Vieux_port.jpg) no-repeat left;
-    background-size: 1000px 500px ;
+    height: 550px;
+    width: 400px;
+    background: url(images/Vieux_port.jpg) no-repeat top;
+    background-size: 850px 550px;
+    border-radius: 30px;
     position: relative;
-    margin-bottom: 25px;
-    box-shadow: 1px 1px 5px grey;
+    box-shadow: 2px 2px 5px grey;
 }
 
 #Fort_promegues
 {
     display: flex;
     height: 300px;
-    width: 310px;
-    background: url(images/Fort_Promègues.jpg) no-repeat top/100%;
+    width: 400px;
+    background: url(images/Fort_Promègues.jpg) no-repeat center;
+    background-size: 410px 570px;
+    border-radius: 30px;
     position: relative;
-    margin-bottom: 25px;
-    box-shadow: 1px 1px 5px grey;
+    box-shadow: 2px 2px 5px grey;
 }
 
 #iles_frioul
 {
     display: flex;
-    height: 240px;
-    width: 310px;
+    height: 220px;
+    width: 400px;
     background: url(images/Iles_Frioul.jpg) no-repeat top/100%;
+    border-radius: 30px;
     position: relative;
-    margin-bottom: 25px;
-    box-shadow: 1px 1px 5px grey;
+    box-shadow: 2px 2px 5px grey;
 }
 
 #calanques
 {
     display: flex;
-    height: 240px;
-    width: 310px;
-    background: url(images/Parc_Calanques.jpg) no-repeat top/100%;
+    height: 550px;
+    width: 400px;
+    background: url(images/Parc_Calanques.jpg) no-repeat center;
+    background-size: 800px 550px;
+    border-radius: 30px;
     position: relative;
-    margin-bottom: 25px;
-    box-shadow: 1px 1px 5px grey;
+    box-shadow: 2px 2px 5px grey;
 }
 
 #lagarde
 {
     display: flex;
-    height: 240px;
-    width: 310px;
-    background: url(images/Notre_Dame_de_la_Garde.jpg) no-repeat top/100%;
+    height: 220px;
+    width: 400px;
+    background: url(images/Notre_Dame_de_la_Garde.jpg) no-repeat center;
+    background-size: 400px;
+    border-radius: 30px;
     position: relative;
-    margin-bottom: 25px;
-    box-shadow: 1px 1px 5px grey;
+    box-shadow: 2px 2px 5px grey;
 }
 
 #Longchamp
 {
     display: flex;
-    height: 240px;
-    width: 310px;
-    background: url(images/Parc_Longchamp.jpg) no-repeat top/100%;
+    height: 300px;
+    width: 400px;
+    background: url(images/Parc_Longchamp.jpg) no-repeat center;
+    background-size: 400px 350px;
+    border-radius: 30px;
     position: relative;
-    margin-bottom: 25px;
-    box-shadow: 1px 1px 5px grey;
+    box-shadow: 2px 2px 5px grey;
 }
 
 /*  ---------- Footer  ---------- */
 
+#footer
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap:wrap;
+    height: 300px;
+    background-color: #F2F2F2;
+}
+
+#listes_A_propos
+{
+    margin-left: 50px;
+}
+
+#listes_A_propos a
+{
+    padding: 0px;
+}
+
+#Nos_Hébergements a
+{
+    padding: 0px;
+}
+
+#Assistance
+{
+    padding: 0px;
+}

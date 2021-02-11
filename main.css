@@ -2,8 +2,6 @@
 body 
 {
     margin : 0px;
-    margin-right: 50px;
-    margin-left: 50px;
 }
 
 ul
@@ -19,9 +17,8 @@ input
 
 li
 {
-    display: flex;
-    text-align: center;
     margin: 0px;
+    list-style-type: none;
 }
 
 .fas
@@ -39,17 +36,8 @@ a
 
 html
 {
-    height: 100%;
-}
-
-body
-{
     font-family: 'Raleway', sans-serif;
-    height:100%;
     position: relative;
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 /* -------- Header -------- */
@@ -61,8 +49,8 @@ header
     align-items:center;
     align-content: center;
     font-family: 'Raleway', sans-serif;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 figure
@@ -79,7 +67,7 @@ figure
 
 #logo img
 {
-    width: 30%;
+    width: 35%;
 }
 
 /* -------- Navigation -------- */
@@ -107,8 +95,6 @@ nav li
     padding-left: 20px;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 5px;
-    margin-right: 5px;
     border-top: 3px solid white;
 }
 .hovernav a:hover
@@ -142,8 +128,8 @@ nav li
 
 #sectionsearch
 {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 section ul 
@@ -151,7 +137,6 @@ section ul
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 section h1
@@ -161,11 +146,9 @@ section h1
     font-size: 1.8em;
 }
 
-section p
+#sectionsearch p
 {
     font-size: 1.32em;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
 }
 
 #searchtool
@@ -183,13 +166,13 @@ section p
     background-color: #F2F2F2;
     border-radius: 17px 0px 0px 17px;
     height:63px;
-    width: 65px;
+    width: 3.5%;
 }
 
 input
 {
     height: 63px;
-    width: 310px;
+    box-sizing: border-box;
     border-right: none;
     border-right-width: 0px;
     border-radius: 0px;
@@ -210,16 +193,18 @@ button
     border-radius: 0px 17px 17px 0px;
     border-style:none ;
     height: 63px;
-    width: 180px;
+    box-sizing: border-box;
     color: white;
 }
+
 .search
 {
     font-size: 1.5em;
     font-weight: 500;
     color: black;
-    padding-left: 20px;
     word-spacing: 2px;
+    padding-right: 20px;
+    padding-left: 10px;
 }
 
 .search2
@@ -227,9 +212,11 @@ button
     font-size: 1.5em;
     font-weight: 500;
     color:white;
-    padding-left: 20px;
+    padding-left: 30px;
+    padding-right: 20px;
     word-spacing: 2px;
 }
+
 #Filtres
 {
     align-items: center;
@@ -242,6 +229,10 @@ button
     width: 73%;
 }
 
+#Filtres a
+{
+    padding-left: 15px;
+}
 .filter
 {
     display: flex;
@@ -252,9 +243,17 @@ button
     border-radius: 30px 30px 30px 30px;
     border-color: #F2F2F2;
     font-weight: 700;
-    margin: 5px;
 }
 
+.filter:hover
+{
+    background-color: #F2F2F2;
+}
+
+.filter:hover .circle
+{
+    background-color:#F2F2F2;
+}
 
 .circle
 {
@@ -270,9 +269,9 @@ button
 
 a
 {
-    padding-left: 15px;
     padding-right: 15px;
 }
+
 .fa-money-bill-wave
 {
     display:flex;
@@ -346,7 +345,6 @@ h2
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 1.8em;
-    height:50px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -356,9 +354,8 @@ h2
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 #bloc_gauche
@@ -369,18 +366,17 @@ h2
     flex-wrap: wrap;
     border-radius: 30px 30px 30px 30px;
     background-color: #F2F2F2;
-    width: 1130px;
-    height: 700px;
-    padding: 20px 50px 40px 50px;
-    margin: 20px 0px 20px 0px;
+    width: 64%;
+    padding: 0px 50px 0px 50px;
+    overflow: hidden;
 }
 
 
 #Hebergements
 {
     justify-content: space-between;
-    padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 .banniere
@@ -425,18 +421,8 @@ a .hovercard
     padding: 0px;
 }
 
-figure img 
-{
-    left: 0;
-    right: 0;
-    border-style: none;
-    border-radius: 30px;
-}
-
 figcaption 
 {
-    max-width: 100%;
-    max-height: 100%;
     display: block;
     background-color:white;
     color: black;
@@ -449,31 +435,10 @@ figcaption h3
     margin: 0px;
 }
 
-#auberge_cannebiere
+.Cardleft
 {
     height: 240px;
-    width: 310px;
-    border-radius: 30px;
-    border-style: solid;
-    border-color: white;
-    border-width: 6px;
-    position: relative;
-    margin-bottom: 25px;
-    box-shadow: 1px 1px 5px grey;
-    overflow: hidden;
-}
-#auberge_cannebiere img
-{
-    position:absolute;
-    box-sizing: border-box;
-    width: 100%;
-    bottom: 25%
-}
-
-#Hotel_port
-{
-    height: 240px;
-    width: 310px;
+    width: 30%;
     border-radius: 30px;
     border-style: solid;
     border-color: white;
@@ -484,98 +449,47 @@ figcaption h3
     overflow: hidden;
 }
 
-#Hotel_port img
+.Cardleft figure
 {
-    position:absolute;
-    box-sizing: border-box;
-    width: 100%;
-    bottom: 25%
+    margin: 0px;
 }
 
-#Hotel_mouettes
+#Hebergements figure img
 {
-    height: 240px;
-    width: 310px;
-    border-radius: 30px;
-    border-style: solid;
-    border-color: white;
-    border-width: 6px;
     position: relative;
-    margin-bottom: 25px;
-    box-shadow: 1px 1px 5px grey;
-    overflow: hidden;
-}
-
-#Hotel_mouettes img
-{
-    position:absolute;
     box-sizing: border-box;
     width: 100%;
-    bottom: 25%
+    border-style: none;
+    border-radius: 30px;   
+}
+#AubergeCannebiere img
+{
+    top: -40px;
 }
 
-#Hotel_mer
+#HotelPort img
 {
-    height: 240px;
-    width: 310px;
-    border-radius: 30px;
-    border-style: solid;
-    border-color: white;
-    border-width: 6px;
-    position: relative;
-    margin-bottom: 25px;
-    box-shadow: 1px 1px 5px grey;
-    overflow: hidden;
+    top: -40px;
 }
 
-#Hotel_mer img
+#HotelMouettes img
 {
-    position:absolute;
-    box-sizing: border-box;
-    width: 100%;
-    bottom: 20%;
+    top: -40px;
 }
 
-#Auberge_panier 
+#Hotelmer img
 {
-    height: 240px;
-    width: 310px;
-    border-radius: 30px;
-    border-style: solid;
-    border-color: white;
-    border-width: 6px;
-    position: relative;
-    margin-bottom: 25px;
-    box-shadow: 1px 1px 5px grey;
-    overflow: hidden;
-}
-#Auberge_panier img
-{
-    position:absolute;
-    box-sizing: border-box;
-    width: 100%;
-    bottom: 32%;
+    top: -85px;
 }
 
-#Hotel_amina
+#AubergePanier img
 {
-    height: 240px;
-    width: 310px;
-    border-radius: 30px;
-    border-style: solid;
-    border-color: white;
-    border-width: 6px;
-    position: relative;
-    margin-bottom: 25px;
-    box-shadow: 1px 1px 5px grey;
-    overflow: hidden;
+    top: -40px;
 }
-#Hotel_amina img
+
+#HotelAmina img
 {
-    position:absolute;
-    box-sizing: border-box;
-    width: 100%;
-    bottom:0;
+    top: -190px;
 }
 
 .fa-star
@@ -595,8 +509,8 @@ figcaption h3
     font-size: 1.3em;
     font-weight: 700;
     padding-left: 5px;
-    margin-bottom: 0;
-    padding-top: 10px;
+    margin: 0;
+    height: fit-content;
 }
 #bloc_gauche h2
 {
@@ -611,15 +525,14 @@ figcaption h3
     flex-wrap: wrap;
     border-radius: 30px 30px 30px 30px;
     background-color: #F2F2F2;
-    width: 460px;
-    height: 700px;
-    padding: 20px 30px 40px 30px;
-    margin-top: 20px;
+    width: 25%;
+    padding: 0px 30px 0px 30px;
+    overflow: hidden;
 }
 
-#bloc_droite h2
+#bloc_droite a
 {
-    margin: 0;
+    padding-right: 0px;
 }
 
 .fa-chart-line
@@ -628,26 +541,24 @@ figcaption h3
     padding-top: 30px;
     padding-right: 25px;
 }
+
 #Populaires
 {
     justify-content: space-between;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 .banniere_droite
 {
-    position: absolute;
+    position: relative;
     border-radius: 0px 20px 20px 0px;
-    width: 60%;
-    height: 100%;
     background-color: white;
     font-size: 1.1em;
     text-align:left;
     line-height: 1.5em;
     list-style-type: none;
-    padding-left: 20px;
-    padding-top: 5px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -672,83 +583,34 @@ figcaption h3
     padding-bottom: 20px;
 }
 
-#Hotel_soleil
+.Cardright
 {
-    display: flex;
-    justify-content:flex-end;
-    height: 160px;
-    width: 430px;
+    height: 190px;
     border-radius: 30px;
     border-style: solid;
     border-color: white;
     border-width: 6px;
     position: relative;
-    margin-bottom: 35px;
-    box-shadow: 1px 1px 5px grey;
-    overflow: hidden;
-}
-#Hotel_soleil img
-{
-    position:absolute;
-    box-sizing: border-box;
-    width: 60%;
-    right: 20%;
-    bottom: 0;
-}
-
-#Coeur_eau
-{
-    display: flex;
-    justify-content:flex-end;
-    height: 160px;
-    width: 430px;
-    border-radius: 30px;
-    border-style: solid;
-    border-color: white;
-    border-width: 6px;
-    position: relative;
-    margin-bottom: 35px;
-    box-shadow: 1px 1px 5px grey;
-    overflow: hidden;
-}
-
-#Coeur_eau img
-{
-    position:absolute;
-    box-sizing: border-box;
-    width: 50%;
-    bottom: 0;
     right: 0;
-}
-
-#Hotel_bleublanc
-{
-    display: flex;
-    justify-content:flex-end;;
-    height: 160px;
-    width: 430px;
-    border-radius: 30px;
-    border-style: solid;
-    border-color: white;
-    border-width: 6px;
-    position: relative;
+    margin-bottom: 35px;
     box-shadow: 1px 1px 5px grey;
     overflow: hidden;
 }
-
-#Hotel_bleublanc img
+#Populaires figure
 {
-    position:absolute;
-    box-sizing: border-box;
-    width: 40%;
-    bottom: 0;
+    margin: 0px;
+}
+
+#Populaires figure img
+{
+    width: 60%;
     right: 0;
 }
 
 #sectionactivite
 {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 #Activites
@@ -760,6 +622,13 @@ figcaption h3
     flex-wrap:wrap;
     height: 550px;
     margin-bottom: 50px;
+    overflow: hidden;
+}
+
+#Activites li
+{
+    display: flex;
+    text-align: center;
 }
 
 .banniere2
@@ -788,7 +657,6 @@ figcaption h3
     display: flex;
     height: 550px;
     width: 400px;
-    background-size: 850px 550px;
     border-radius: 30px;
     position: relative;
     box-shadow: 2px 2px 5px grey;
@@ -797,9 +665,9 @@ figcaption h3
 
 #vieux_port img
 {
-    position: absolute;
+    position:absolute;
+    left: -50%;
     box-sizing: border-box;
-    width: 100%;
 }
 
 #Fort_promegues
@@ -807,11 +675,17 @@ figcaption h3
     display: flex;
     height: 300px;
     width: 400px;
-    background-size: 410px 570px;
     border-radius: 30px;
     position: relative;
     box-shadow: 2px 2px 5px grey;
     overflow: hidden;
+}
+
+#Fort_promegues img
+{
+    position:absolute;
+    bottom: -50%;
+    width: 100%;
 }
 
 #iles_frioul
@@ -825,16 +699,30 @@ figcaption h3
     overflow: hidden;
 }
 
+#iles_frioul img
+{
+    position:absolute;
+    bottom: -10%;
+    width: 100%;
+}
+
 #calanques
 {
     display: flex;
     height: 550px;
     width: 400px;
-    background-size: 800px 550px;
     border-radius: 30px;
     position: relative;
     box-shadow: 2px 2px 5px grey;
     overflow: hidden;
+}
+
+#calanques img
+{
+    position:absolute;
+    left: -60%;
+    top: -10%;
+    width: 220%;
 }
 
 #lagarde
@@ -842,11 +730,17 @@ figcaption h3
     display: flex;
     height: 220px;
     width: 400px;
-    background-size: 400px;
     border-radius: 30px;
     position: relative;
     box-shadow: 2px 2px 5px grey;
     overflow: hidden;
+}
+
+#lagarde img
+{
+    position:absolute;
+    top: -5%;
+    width: 100%;
 }
 
 #Longchamp
@@ -854,11 +748,16 @@ figcaption h3
     display: flex;
     height: 300px;
     width: 400px;
-    background-size: 400px 350px;
     border-radius: 30px;
     position: relative;
     box-shadow: 2px 2px 5px grey;
     overflow: hidden;
+}
+
+#Longchamp img
+{
+    position:absolute;
+    width: 100%;
 }
 
 /*  ---------- Footer  ---------- */
@@ -877,7 +776,7 @@ figcaption h3
 
 #listes_A_propos
 {
-    margin-left: 50px;
+    margin-left: 40px;
     margin-right: 360px;
 }
 
@@ -914,14 +813,30 @@ figcaption h3
 
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) { 
-    body {
-        background-color: red;
-    } 
+@media (max-width: 768px) 
+{ 
+
+    #bloc
+    {
+        flex-direction: column;
+
+    }
+
+    #bloc_gauche
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+    #bloc_droite
+    {
+        width: 100%;
+    }
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 576px) 
+{ 
     body {
-        background-color: blue;
+
     } 
 }

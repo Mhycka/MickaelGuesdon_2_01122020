@@ -1,29 +1,18 @@
 /* -------- Réinitialiser -------- */
-body 
+body, .fas, h3
 {
     margin : 0px;
 }
 
-ul
+ul , input
 {
     padding: 0;
     
 }
 
-input
-{
-    padding :0;
-}
-
 li
 {
-    margin: 0px;
     list-style-type: none;
-}
-
-.fas
-{
-    margin: 0px;
 }
 
 a
@@ -49,50 +38,34 @@ header
     align-items:center;
     align-content: center;
     font-family: 'Raleway', sans-serif;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 figure
 {
     margin: 0px;
-    margin-top: 5px;
-}
-
-#logo
-{
-    display: flex;
-    align-items: baseline;
 }
 
 #logo img
 {
-    width: 35%;
+    width: 120px;
 }
 
 /* -------- Navigation -------- */
 
 nav ul 
 {
-    list-style-type: none;
     display: flex;
+    justify-content: space-between;
     margin: 0px;
-}
-
-nav li
-{
-    margin-right: 30px;
-    margin-left: 10px;
-    padding-top: 0px;
 }
 
 .hovernav
 {
     font-size: 1.3em;
     padding-top: 30px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
+    margin-right: 100px;
     text-decoration: none;
     font-weight: 500;
     border-top: 3px solid white;
@@ -128,15 +101,8 @@ nav li
 
 #sectionsearch
 {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-section ul 
-{
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 section h1
@@ -153,7 +119,10 @@ section h1
 
 #searchtool
 {
-    margin-bottom: 40px;
+    margin-bottom: 3%;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #Markmaper
@@ -219,25 +188,24 @@ button
 
 #Filtres
 {
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     font-style:normal;
     font-weight: 600;
     font-size: 1.65em;
-    padding-left: 10px;
-    margin-bottom: 40px;
-    width: 73%;
+    width: 74%;
 }
 
 #Filtres a
 {
-    padding-left: 15px;
+    padding: 0px 15px;
 }
 .filter
 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     border-style: solid;
     height:55px;
     border-radius: 30px 30px 30px 30px;
@@ -245,14 +213,9 @@ button
     font-weight: 700;
 }
 
-.filter:hover
+.filter:hover, .filter:hover .circle
 {
     background-color: #F2F2F2;
-}
-
-.filter:hover .circle
-{
-    background-color:#F2F2F2;
 }
 
 .circle
@@ -267,32 +230,13 @@ button
     margin: -7px;
 }
 
-a
-{
-    padding-right: 15px;
-}
-
-.fa-money-bill-wave
-{
-    display:flex;
-    justify-content: center;
-    color: #0065FC;
-}
-
-.fa-child
+.fa-child, .fa-info
 {
     display:flex;
     color: #0065FC;
 }
 
-.fa-heart
-{
-    display:flex;
-    justify-content: center;
-    color: #0065FC;
-}
-
-.fa-dog
+.fa-dog , .fa-heart ,.fa-money-bill-wave
 {
     display:flex;
     justify-content: center;
@@ -304,7 +248,7 @@ a
     display: flex;
     align-items: center;
     font-style:normal;
-    margin-bottom: 40px;
+    margin-bottom: 3%;
 }
 
 #text_info
@@ -324,13 +268,6 @@ a
     height: 25px;
 }
 
-.fa-info
-{
-    display:flex;
-    color: #0065FC;
-}
-
-
 /* ---------- Main ---------- */
 
 strong
@@ -340,13 +277,9 @@ strong
 
 h2
 {
-    display: flex;
-    align-items: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 1.8em;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 #bloc
@@ -354,36 +287,33 @@ h2
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 #bloc_gauche
 {
-    display: flex;
-    justify-content: space-between;
     border-style: none;
-    flex-wrap: wrap;
     border-radius: 30px 30px 30px 30px;
     background-color: #F2F2F2;
-    width: 64%;
-    padding: 0px 50px 0px 50px;
     overflow: hidden;
+    width: 70%;
 }
-
-
+#bloc_gauche ul
+{
+    display: flex;
+    flex-wrap: wrap;
+}
 #Hebergements
 {
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0;
-    width: 100%;
 }
 
 .banniere
 {
     position: absolute;
     bottom: 0;
-    border-radius: 0px 0px 20px 20px;
     width: 100%;
     height: 70px;
     padding-left: 5px;
@@ -438,7 +368,7 @@ figcaption h3
 .Cardleft
 {
     height: 240px;
-    width: 30%;
+    width: 25%;
     border-radius: 30px;
     border-style: solid;
     border-color: white;
@@ -459,32 +389,12 @@ figcaption h3
     position: relative;
     box-sizing: border-box;
     width: 100%;
-    border-style: none;
-    border-radius: 30px;   
-}
-#AubergeCannebiere img
-{
-    top: -40px;
-}
-
-#HotelPort img
-{
-    top: -40px;
-}
-
-#HotelMouettes img
-{
-    top: -40px;
+    border-style: none;  
 }
 
 #Hotelmer img
 {
     top: -85px;
-}
-
-#AubergePanier img
-{
-    top: -40px;
 }
 
 #HotelAmina img
@@ -508,57 +418,66 @@ figcaption h3
 {
     font-size: 1.3em;
     font-weight: 700;
-    padding-left: 5px;
+    padding-left: 6%;
     margin: 0;
     height: fit-content;
 }
 #bloc_gauche h2
 {
     margin: 0;
+    padding: 2% 0% 2% 6%;
+    height: fit-content;
 }
 
-#bloc_droite
+aside
 {
-    display: flex;
-    justify-content: space-between;
     border-style: none;
-    flex-wrap: wrap;
     border-radius: 30px 30px 30px 30px;
     background-color: #F2F2F2;
-    width: 25%;
-    padding: 0px 30px 0px 30px;
     overflow: hidden;
+    width: 27%;
+    margin-left: 3%;
 }
-
-#bloc_droite a
+#titre
 {
-    padding-right: 0px;
+    display: flex;
+    align-items: center;
 }
 
 .fa-chart-line
 {
-    display: flex;
-    padding-top: 30px;
-    padding-right: 25px;
+    margin-left: 20%;
 }
 
-#Populaires
+aside ul
 {
-    justify-content: space-between;
-    padding: 0;
     margin: 0;
-    width: 100%;
 }
+
+aside h2
+{
+    margin: 0;
+    padding: 5% 0% 5% 10%;
+}
+
+aside a
+{
+    padding-right: 0px;
+}
+ aside figure
+ {
+    width: 40%;
+    overflow: hidden;
+ }
 
 .banniere_droite
 {
-    position: relative;
+    width: 60%;
     border-radius: 0px 20px 20px 0px;
     background-color: white;
     font-size: 1.1em;
     text-align:left;
     line-height: 1.5em;
-    list-style-type: none;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -567,50 +486,58 @@ figcaption h3
     padding-top: 10px;
 }
 
-.banniere_droite h3
-{
-    padding-bottom: 5px;
-    width: 200px;
-}
-
 .banniere_droite ul
 {
     list-style-type: none;
     display: flex;
-    align-items: flex-end;
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 20px;
+    padding: 20% 0% 0% 5%;
 }
 
 .Cardright
 {
-    height: 190px;
+    height: 170px;
+    width: 80%;
     border-radius: 30px;
     border-style: solid;
     border-color: white;
     border-width: 6px;
-    position: relative;
-    right: 0;
-    margin-bottom: 35px;
     box-shadow: 1px 1px 5px grey;
     overflow: hidden;
-}
-#Populaires figure
-{
-    margin: 0px;
+    box-sizing: border-box;
+    margin-bottom: 8%;
+    margin-left: 10%;
 }
 
-#Populaires figure img
+.Cardright a
 {
-    width: 60%;
-    right: 0;
+    display: flex;
+    height: 100%;
+}
+
+aside h3, aside span
+{
+    padding: 2% 0% 0% 5%;
+}
+
+#Hotelsoleil img
+{
+    height: 100%;
+}
+
+#Coeurdeleau img
+{
+    height: 100%;
+}
+
+#Hoteltoutbleu img
+{
+    width: 100%;
 }
 
 #sectionactivite
 {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 #Activites
@@ -621,8 +548,6 @@ figcaption h3
     flex-direction: column;
     flex-wrap:wrap;
     height: 550px;
-    margin-bottom: 50px;
-    overflow: hidden;
 }
 
 #Activites li
@@ -654,9 +579,8 @@ figcaption h3
 
 #vieux_port
 {
-    display: flex;
     height: 550px;
-    width: 400px;
+    width: 23%;
     border-radius: 30px;
     position: relative;
     box-shadow: 2px 2px 5px grey;
@@ -668,13 +592,13 @@ figcaption h3
     position:absolute;
     left: -50%;
     box-sizing: border-box;
+    height: 100%;
 }
 
 #Fort_promegues
 {
-    display: flex;
     height: 300px;
-    width: 400px;
+    width: 23%;
     border-radius: 30px;
     position: relative;
     box-shadow: 2px 2px 5px grey;
@@ -690,9 +614,8 @@ figcaption h3
 
 #iles_frioul
 {
-    display: flex;
     height: 220px;
-    width: 400px;
+    width: 23%;
     border-radius: 30px;
     position: relative;
     box-shadow: 2px 2px 5px grey;
@@ -708,9 +631,8 @@ figcaption h3
 
 #calanques
 {
-    display: flex;
     height: 550px;
-    width: 400px;
+    width: 23%;
     border-radius: 30px;
     position: relative;
     box-shadow: 2px 2px 5px grey;
@@ -727,9 +649,8 @@ figcaption h3
 
 #lagarde
 {
-    display: flex;
     height: 220px;
-    width: 400px;
+    width: 23%;
     border-radius: 30px;
     position: relative;
     box-shadow: 2px 2px 5px grey;
@@ -745,9 +666,8 @@ figcaption h3
 
 #Longchamp
 {
-    display: flex;
     height: 300px;
-    width: 400px;
+    width: 23%;
     border-radius: 30px;
     position: relative;
     box-shadow: 2px 2px 5px grey;
@@ -765,7 +685,6 @@ figcaption h3
 #footer
 {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     flex-wrap:wrap;
     height: 300px;
@@ -776,67 +695,47 @@ figcaption h3
 
 #listes_A_propos
 {
-    margin-left: 40px;
-    margin-right: 360px;
-}
-
-#listes_A_propos a
-{
-    padding: 0px;
-    margin-top: 20px;
+    width: 30%;
+    margin-left: 2%;
 }
 
 #Nos_Hebergements
 {
-    margin-right: 360px;
-    margin-bottom: 30px;
-}
-
-#Nos_Hebergements a
-{
-    padding: 0px;
-    margin-top: 20px;
+    width: 30%;
 }
 
 #Assistance
 {
-    padding: 0px;
-    margin-bottom: 30px;
+    width: 30%;
 }
 
-#Assistance a
+footer #listes_A_propos h3
 {
-    padding: 0px;
-    margin-top: 20px;
+    margin-top: 5%;
 }
 
-
+footer li
+{
+    margin-bottom: 5%;
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) 
 { 
-
-    #bloc
-    {
-        flex-direction: column;
-
-    }
-
     #bloc_gauche
     {
         width: 100%;
         margin: 0;
     }
 
-    #bloc_droite
+    aside
     {
         width: 100%;
+        margin-left: 0;
     }
 }
 
 @media (max-width: 576px) 
 { 
-    body {
 
-    } 
 }

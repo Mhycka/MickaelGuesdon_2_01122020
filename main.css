@@ -49,7 +49,8 @@ figure
 
 #logo img
 {
-    width: 120px;
+    width: 130px;
+    margin-top: 11%;
 }
 
 /* -------- Navigation -------- */
@@ -289,6 +290,7 @@ h2
     justify-content: space-between;
     margin-left: 2%;
     margin-right: 2%;
+    padding-bottom: 2%;
 }
 
 #bloc_gauche
@@ -374,7 +376,7 @@ figcaption h3
     border-color: white;
     border-width: 6px;
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 3%;
     box-shadow: 1px 1px 5px grey;
     overflow: hidden;
 }
@@ -419,12 +421,12 @@ figcaption h3
     font-size: 1.3em;
     font-weight: 700;
     padding-left: 6%;
-    margin: 0;
+    margin: 0% 0% 4% 0%;
     height: fit-content;
 }
 #bloc_gauche h2
 {
-    margin: 0;
+    margin: 2% 0% 0% 0%;
     padding: 2% 0% 2% 6%;
     height: fit-content;
 }
@@ -456,7 +458,7 @@ aside ul
 
 aside h2
 {
-    margin: 0;
+    margin: 5% 0% 0% 0%;
     padding: 5% 0% 5% 10%;
 }
 
@@ -495,8 +497,8 @@ aside a
 
 .Cardright
 {
-    height: 170px;
-    width: 80%;
+    height: 180px;
+    width: 82%;
     border-radius: 30px;
     border-style: solid;
     border-color: white;
@@ -538,6 +540,7 @@ aside h3, aside span
 {
     margin-left: 2%;
     margin-right: 2%;
+    padding-bottom: 2%;
 }
 
 #Activites
@@ -722,16 +725,159 @@ footer li
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) 
 { 
+    #logo img
+    {
+        width: 150px;
+        margin-top: 10%;
+    }
+
+    #Filtres
+    {
+        width: auto;
+        justify-content: space-around;
+    }
+
+    .filter
+    {
+        margin: 0% 2% 2% 0%;
+    }
+
+    #bloc
+    {
+        padding-bottom: 0;
+        flex-direction: column-reverse;
+    }
+
     #bloc_gauche
     {
         width: 100%;
         margin: 0;
     }
 
+    .Cardleft
+    {
+        height: 160px;
+    }
+
+    .banniere
+    {
+        height: 60px;
+        font-size: 0.9em;
+    }
+    .banniere h3
+    {
+        padding-bottom: 0;
+        font-size: 1em;
+    }
     aside
     {
         width: 100%;
         margin-left: 0;
+        margin-bottom: 5%;
+    }
+
+    aside figure
+    {
+        width: 50%;
+    }
+
+    .banniere_droite
+    {
+        font-size: 1em;
+        width: 50%;
+    }
+
+    aside h3
+    {
+        padding: 2% 0% 0% 5%;
+        font-size: 1em;
+    }
+    aside h2
+    {
+        margin: 2% 0% 2% 0%;
+        padding: 2% 0% 2% 10%;
+    }
+
+    #Hotelsoleil img 
+    {
+        height:auto;
+        position: relative;
+        bottom: 130%;
+    }
+
+    #Coeurdeleau img
+    {
+        height:auto;
+        position: relative;
+        bottom: 100%;
+        left: -30%;
+    }
+
+    #Hoteltoutbleu img 
+    {
+        position: relative;
+        bottom: 150%;
+        width: 100%;
+    }
+    .fa-chart-line 
+    {
+        margin-left: 40%;
+    }
+
+    .Cardright
+    {
+        margin-bottom: 3%;
+        height: 150px;
+    }
+   
+    #Hebergements figure img
+    {
+        width: 110%;
+    }
+    
+    #Activites , #vieux_port , #calanques
+    {
+        height: 300px;
+    }
+
+    #Fort_promegues , #lagarde
+    {
+        height: 150px;
+    }
+
+    #Fort_promegues img
+    {
+        bottom: -10%;
+    }
+
+    #iles_frioul , #Longchamp
+    {
+        height: 120px;
+    }
+
+    #iles_frioul img
+    {
+        bottom: 20%;
+    }
+
+    #calanques img
+    {
+        top: 0;
+    }
+
+    #Longchamp img 
+    {
+        top: -30%;
+    }
+
+    #footer
+    {
+        font-size: 1em;
+    }
+
+    #Nos_Hebergements , #Assistance
+    {
+        margin-left: 3%;
     }
 }
 

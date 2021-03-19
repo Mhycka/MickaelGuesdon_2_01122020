@@ -739,7 +739,7 @@ footer li
     #Filtres
     {
         width: auto;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .filter

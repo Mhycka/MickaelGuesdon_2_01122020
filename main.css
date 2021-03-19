@@ -970,7 +970,7 @@ footer li
 
     #searchtool
     {
-        margin: 0% 5% 7% 8%;
+        margin: 0% 0% 7% 8%;
     }
 
     #Filtres
@@ -1007,8 +1007,7 @@ footer li
 
     #sectionactivite
     {
-        margin-right: 0;
-        margin-left: 0;
+        margin: 0% 0% 11% 0%;
     }
 
     #Markmaper
@@ -1073,7 +1072,7 @@ footer li
         display: inline;
         border-radius: 0;
         margin-left: 0;
-        margin-bottom: 5%;
+        margin-bottom: 7%;
     }
 
     .fa-chart-line
@@ -1093,6 +1092,21 @@ footer li
         margin-bottom: 8%;
     }
 
+    aside h2
+    {
+        margin: 7% 0% 2% 0%;
+    }
+
+    .fa-chart-line
+    {
+    margin: 6% 0% 0% 30%;
+    }
+
+    .banniere_droite
+    {
+        width: 70%;
+    }
+
     aside h3 
     {
         padding: 9% 0% 3% 10%;
@@ -1101,11 +1115,14 @@ footer li
 
     aside span 
     {
-    padding: 0% 0% 0% 10%;
+        padding: 0% 0% 0% 10%;
+        font-size: 1.28em;
     }
-    .banniere_droite
+    
+    .banniere_droite ul
     {
-        width: 70%;
+        padding: 16% 0% 0% 10%;
+        font-size: 1.2em;
     }
 
     #Hotelsoleil img
@@ -1114,9 +1131,150 @@ footer li
         position: initial;
     }
 
+    #Coeurdeleau img
+    {
+        position: initial;
+        height: 100%;
+    }
+
+    #Hoteltoutbleu img
+    {
+        position: relative;
+        bottom: 60%;
+    }
+
     #bloc_gauche
     {
         margin: 0;
         background-color: initial;
+    }
+    
+    #bloc_gauche h2
+    {
+        margin: 0% 0% 4% 8%;
+        padding: 0;
+    }
+
+    .Cardleft
+    {
+        height: 260px;
+        width: 84%;
+        margin: 0% 0% 4% 0%;
+
+    }
+
+    .banniere
+    {
+        height: 30%;
+        font-size: 1.2em;
+    }
+
+    .banniere h3
+    {
+        font-size: 1.2em;
+        margin-left: 2%;
+    }
+
+    .banniere span
+    {
+        margin-left: 2%;
+        font-size: 1.18em;
+    }
+
+    #bloc_gauche ul
+    {
+        display: flex;
+    }
+
+    .banniere ul 
+    {
+        margin-left: 2%;
+    }
+
+    #bloc_gauche p
+    {
+        font-size: 1.4em;
+        margin: 2% 0% 4% 8%;
+        padding: 0;
+    }
+
+    #sectionactivite h2 
+    {
+        margin: 6% 0% 7% 8%;
+    }
+
+    #Activites
+    {
+        display: initial;
+
+    }
+
+    #vieux_port, #calanques, #Fort_promegues, #lagarde, #iles_frioul, #Longchamp
+    {
+        height: 260px;
+        width: 84%;
+        margin: 0% 0% 5% 8%;
+    }
+
+    .banniere2
+    {
+        height: 30%;
+        font-size: 1.3em;
+        font-weight: 800;
+    }
+
+    .banniere2 p 
+    {
+        padding: 6%;
+    }
+
+    #vieux_port img
+    {
+        position: relative;
+        width: 100%;
+        bottom: 90px;
+        left: 0;
+    }
+
+    #Fort_promegues img
+    {
+        bottom: -85%;
+    }
+
+    #iles_frioul img
+    {
+        bottom: -10%;
+    }
+
+    #calanques img
+    {
+        top: -40%;
+        width: auto;
+        left: 0;
+    }
+
+    #footer
+    {
+        display: inherit;
+        height: fit-content;
+        font-size: 1.4em;
+    }
+
+    footer #listes_A_propos h3
+    {
+        margin-top: 0%;
+        padding-top: 10%
+    }
+
+    footer li
+    {
+        margin-bottom: 3%;
+    }
+
+    #listes_A_propos, #Nos_Hebergements, #Assistance
+    {
+        width: auto;
+        margin: 0% 0% 0% 8%;
+        padding-bottom: 4%;
     }
 }

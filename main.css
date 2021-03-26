@@ -64,7 +64,7 @@ nav ul
 
 .hovernav
 {
-    font-size: 1.3em;
+    font-size: 1em;
     padding-top: 7%;
     margin-right: 100px;
     text-decoration: none;
@@ -83,7 +83,7 @@ nav ul
 
 #login
 {
-    font-size: 1.3em;
+    font-size: 1em;
     padding-top: 7%;
     padding-bottom: 7%;
     text-decoration: none;
@@ -110,17 +110,13 @@ section h1
 {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
-    font-size: 1.8em;
-}
-
-#sectionsearch p
-{
-    font-size: 1.32em;
+    font-size: 1.6em;
 }
 
 #searchtool
 {
-    margin-bottom: 3%;
+    margin: 2% 0% 2% 0%;
+    margin-bottom: 2%;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -169,7 +165,7 @@ button
 
 .search
 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 500;
     color: black;
     word-spacing: 2px;
@@ -179,7 +175,7 @@ button
 
 .search2
 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 500;
     color:white;
     padding-left: 30px;
@@ -200,7 +196,7 @@ button
     flex-wrap: wrap;
     font-style:normal;
     font-weight: 600;
-    font-size: 1.65em;
+    font-size: 1.3em;
     width: 74%;
 }
 
@@ -259,7 +255,7 @@ button
 
 #text_info
 {
-    font-size: 1.36em;
+    font-size: 1em;
 }
 
 .circle_info
@@ -894,29 +890,21 @@ footer li
     {
         margin: 0;
         align-items: initial;
-    }
-
-    figure#logo
-    {
-        position: absolute;
+        display: block;
     }
 
     #logo img
     {
-        width: 150px;
+        width: 120px;
         margin-top: 0;
-        padding-left: 20%;
-        padding-top: 10%;
+        padding-left: 8%;
+        padding-top: 8%;
     }
 
     nav 
     {
+        margin-top: 5%;
         width: 100%;
-    }
-
-    nav ul 
-    {
-        flex-wrap: wrap-reverse;
     }
 
     .hovernav 
@@ -924,7 +912,6 @@ footer li
         margin-right: 0;
         width: 50%;
         text-align: center;
-        font-size: 1.5em;
         padding-bottom: 3%;
         padding-top: 0;
         border-top: none;
@@ -939,22 +926,19 @@ footer li
     }
 
     #login
-    {
-        font-size: 1.4em;
-        padding-top: 8%;
-        padding-bottom: 8%;
+    {   
         font-weight: 800;
-        margin-left: 75%;
-        margin-right: 0;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        padding-top: 13%;
+
     }
 
     section h1
     {
-        width: 80%;
-        margin-left: 8%;
-        margin-bottom: 4%;
-        margin-top: 8%;
-        font-size: 2em;
+        margin: 8% 0% 4% 8%;
+        font-size: 1.3em;
     }
 
     #sectionsearch
@@ -966,12 +950,12 @@ footer li
     #sectionsearch p
     {
         margin: 0% 8% 7% 8%;
-        font-size: 1.48em;
+        font-size: 0.9em;
     }
 
     #searchtool
     {
-        margin: 0% 0% 7% 8%;
+        margin: 0% 2% 7% 8%;
     }
 
     #Filtres
@@ -1015,15 +999,21 @@ footer li
     {
         width: 13%;
         border-radius: 20px 0px 0px 20px;
-        font-size: 1.2em;
+        font-size: 1em;
+        height: 55px;
+    }
+
+    input 
+    {
+        height: 55px;
     }
 
     .search
     {
-        padding-left: 30px;
-        padding-right: 40px;
+        padding-right: 0;
         word-spacing: 3px;
         letter-spacing: 0.03em;
+        font-size: 1em;
     }
 
     .search2
@@ -1033,7 +1023,8 @@ footer li
 
     button 
     {
-        border-radius: 20px;
+        border-radius: 15px;
+        height: 55px;
     }
     #iconsearch
     {
@@ -1076,11 +1067,6 @@ footer li
         margin-bottom: 7%;
     }
 
-    .fa-chart-line
-    {
-        margin-left: 30%;
-    }
-
     .Cardright
     {
         height: 200px;
@@ -1100,7 +1086,7 @@ footer li
 
     .fa-chart-line
     {
-    margin: 6% 0% 0% 30%;
+    margin: 7% 8% 0% 0%;
     }
 
     .banniere_droite
@@ -1111,19 +1097,18 @@ footer li
     aside h3 
     {
         padding: 9% 0% 3% 10%;
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     aside span 
     {
         padding: 0% 0% 0% 10%;
-        font-size: 1.28em;
+        font-size: 1em;
     }
     
     .banniere_droite ul
     {
-        padding: 16% 0% 0% 10%;
-        font-size: 1.2em;
+        padding: 35% 0% 0% 10%;
     }
 
     #Hotelsoleil img

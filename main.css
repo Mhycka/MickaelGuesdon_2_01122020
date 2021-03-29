@@ -282,7 +282,17 @@ h2
 {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
-    font-size: 1.8em;
+    font-size: 1.4em;
+}
+
+i.fas.icondeckstop.fa-chart-line.fa-2x
+{
+    margin: 5% 0% 0% 25%;
+}
+
+i.fas.iconmobil.fa-chart-line.fa-lg
+{
+    display: none;
 }
 
 #bloc
@@ -325,15 +335,16 @@ h2
     padding-top: 5px;
     background-color: white;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     text-align:left;
-    line-height: 1.5em;
+    line-height: 1.4em;
     list-style-type: none;
 }
 
 .banniere h3
 {
     padding-bottom: 5px;
+    font-size: 1.2em;
 }
 
 .hovercard figure:hover
@@ -388,7 +399,7 @@ figcaption h3
     margin: 0px;
 }
 
-#Hebergements figure img
+.imagehorizontale img
 {
     position: relative;
     box-sizing: border-box;
@@ -396,14 +407,11 @@ figcaption h3
     border-style: none;  
 }
 
-#Hotelmer img
+.imageverticale img
 {
-    top: -85px;
-}
-
-#HotelAmina img
-{
-    top: -190px;
+    height: 100%;
+    width: 180%;
+    object-fit: cover;
 }
 
 .fa-star
@@ -468,11 +476,12 @@ aside a
 {
     padding-right: 0px;
 }
+
  aside figure
- {
+{
     width: 40%;
     overflow: hidden;
- }
+}
 
 .banniere_droite
 {
@@ -521,21 +530,11 @@ aside a
 aside h3, aside span
 {
     padding: 2% 0% 0% 5%;
+    
 }
-
-#Hotelsoleil img
+aside h3
 {
-    height: 100%;
-}
-
-#Coeurdeleau img
-{
-    height: 100%;
-}
-
-#Hoteltoutbleu img
-{
-    width: 100%;
+    font-size: 1.2em;
 }
 
 #sectionactivite
@@ -592,14 +591,6 @@ aside h3, aside span
     overflow: hidden;
 }
 
-#vieux_port img
-{
-    position:absolute;
-    left: -50%;
-    box-sizing: border-box;
-    height: 100%;
-}
-
 #Fort_promegues
 {
     height: 300px;
@@ -608,13 +599,6 @@ aside h3, aside span
     position: relative;
     box-shadow: 2px 2px 5px grey;
     overflow: hidden;
-}
-
-#Fort_promegues img
-{
-    position:absolute;
-    bottom: -50%;
-    width: 100%;
 }
 
 #iles_frioul
@@ -627,13 +611,6 @@ aside h3, aside span
     overflow: hidden;
 }
 
-#iles_frioul img
-{
-    position:absolute;
-    bottom: -10%;
-    width: 100%;
-}
-
 #calanques
 {
     height: 550px;
@@ -642,14 +619,6 @@ aside h3, aside span
     position: relative;
     box-shadow: 2px 2px 5px grey;
     overflow: hidden;
-}
-
-#calanques img
-{
-    position:absolute;
-    left: -60%;
-    top: -10%;
-    width: 220%;
 }
 
 #lagarde
@@ -662,13 +631,6 @@ aside h3, aside span
     overflow: hidden;
 }
 
-#lagarde img
-{
-    position:absolute;
-    top: -5%;
-    width: 100%;
-}
-
 #Longchamp
 {
     height: 300px;
@@ -677,12 +639,6 @@ aside h3, aside span
     position: relative;
     box-shadow: 2px 2px 5px grey;
     overflow: hidden;
-}
-
-#Longchamp img
-{
-    position:absolute;
-    width: 100%;
 }
 
 /*  ---------- Footer  ---------- */
@@ -695,7 +651,7 @@ aside h3, aside span
     height: 300px;
     background-color: #F2F2F2;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 #listes_A_propos
@@ -741,7 +697,7 @@ footer li
 
     .filter
     {
-        margin: 0% 2% 2% 0%;
+        margin: 0% 1% 2% 0%;
     }
 
     #bloc
@@ -754,6 +710,11 @@ footer li
     {
         width: 100%;
         margin: 0;
+    }
+
+    i.fas.icondeckstop.fa-chart-line.fa-2x
+    {
+        margin: 0% 0% 0% 48%;
     }
 
     .Cardleft
@@ -801,27 +762,6 @@ footer li
         padding: 2% 0% 2% 10%;
     }
 
-    #Hotelsoleil img 
-    {
-        height:auto;
-        position: relative;
-        bottom: 130%;
-    }
-
-    #Coeurdeleau img
-    {
-        height:auto;
-        position: relative;
-        bottom: 100%;
-        left: -30%;
-    }
-
-    #Hoteltoutbleu img 
-    {
-        position: relative;
-        bottom: 150%;
-        width: 100%;
-    }
     .fa-chart-line 
     {
         margin-left: 40%;
@@ -833,11 +773,6 @@ footer li
         height: 150px;
     }
    
-    #Hebergements figure img
-    {
-        width: 110%;
-    }
-
     #Activites , #vieux_port , #calanques
     {
         height: 300px;
@@ -848,29 +783,9 @@ footer li
         height: 150px;
     }
 
-    #Fort_promegues img
-    {
-        bottom: -10%;
-    }
-
     #iles_frioul , #Longchamp
     {
         height: 120px;
-    }
-
-    #iles_frioul img
-    {
-        bottom: 20%;
-    }
-
-    #calanques img
-    {
-        top: 0;
-    }
-
-    #Longchamp img 
-    {
-        top: -30%;
     }
 
     #footer
@@ -955,7 +870,7 @@ footer li
 
     #searchtool
     {
-        margin: 0% 2% 7% 8%;
+        margin: 0% 8% 7% 8%;
     }
 
     #Filtres
@@ -969,13 +884,13 @@ footer li
     #Filtres a 
     {
         font-size: 0.89em;
-        padding: 0px 20px 0px 20px;
+        padding: 0px 10px 0px 10px;
     }
 
     .circle
     {
-        width: 65px;
-        height: 65px;
+        width: 45px;
+        height: 45px;
     }
 
     #textfiltres
@@ -986,8 +901,8 @@ footer li
 
     .filter
     {
-        margin: 0% 9% 4% 0%;
-        height: 60px;
+        margin: 0% 3% 4% 0%;
+        height: 40px;
     }
 
     #sectionactivite
@@ -1010,10 +925,10 @@ footer li
 
     .search
     {
-        padding-right: 0;
+        padding-right: 3%;
         word-spacing: 3px;
         letter-spacing: 0.03em;
-        font-size: 1em;
+        font-size: 0.93em;
     }
 
     .search2
@@ -1029,11 +944,10 @@ footer li
     #iconsearch
     {
         display: initial;
-        padding-left: 22px;
-        padding-right: 22px;
+        padding-left: 15px;
+        padding-right: 15px;
         font-size: 1.1em;
         position: relative;
-        left: -20px;
         padding-top: 6px;
     }
 
@@ -1043,13 +957,15 @@ footer li
         align-items: baseline;
     }
 
-    #info li 
-    {
-        margin-right: 5%;
-    }
     .circle_info
     {
         margin-right: 5%;
+    }
+
+    #text_info
+    {
+        margin-left: 3%;
+        font-size: 0.9em;
     }
 
     #bloc
@@ -1069,7 +985,7 @@ footer li
 
     .Cardright
     {
-        height: 200px;
+        height: 130px;
         margin-left: 8%;
         width: 86%
     }
@@ -1082,11 +998,18 @@ footer li
     aside h2
     {
         margin: 7% 0% 2% 0%;
+        font-size: 1.4em;
     }
 
-    .fa-chart-line
+    i.fas.icondeckstop.fa-chart-line.fa-2x 
     {
-    margin: 7% 8% 0% 0%;
+        display: none;
+    }
+
+    i.fas.iconmobil.fa-chart-line.fa-lg
+    {
+        display: inline-block;
+        margin: 15px 0px 0px 70px;
     }
 
     .banniere_droite
@@ -1096,37 +1019,19 @@ footer li
 
     aside h3 
     {
-        padding: 9% 0% 3% 10%;
-        font-size: 1.1em;
+        padding: 2% 0% 0% 10%;
+        font-size: 0.9em;
     }
 
     aside span 
     {
         padding: 0% 0% 0% 10%;
-        font-size: 1em;
+        font-size: 0.9em;
     }
     
     .banniere_droite ul
     {
-        padding: 35% 0% 0% 10%;
-    }
-
-    #Hotelsoleil img
-    {
-        height: 100%;
-        position: initial;
-    }
-
-    #Coeurdeleau img
-    {
-        position: initial;
-        height: 100%;
-    }
-
-    #Hoteltoutbleu img
-    {
-        position: relative;
-        bottom: 60%;
+        padding: 7% 0% 0% 10%;
     }
 
     #bloc_gauche
@@ -1143,7 +1048,7 @@ footer li
 
     .Cardleft
     {
-        height: 260px;
+        height: 170px;
         width: 84%;
         margin: 0% 0% 4% 0%;
 
@@ -1152,19 +1057,12 @@ footer li
     .banniere
     {
         height: 30%;
-        font-size: 1.2em;
+        font-size: 0.9em;
     }
 
-    .banniere h3
-    {
-        font-size: 1.2em;
-        margin-left: 2%;
-    }
-
-    .banniere span
+    .banniere h3, .banniere span
     {
         margin-left: 2%;
-        font-size: 1.18em;
     }
 
     #bloc_gauche ul
@@ -1179,7 +1077,7 @@ footer li
 
     #bloc_gauche p
     {
-        font-size: 1.4em;
+        font-size: 0.9em;
         margin: 2% 0% 4% 8%;
         padding: 0;
     }
@@ -1197,7 +1095,7 @@ footer li
 
     #vieux_port, #calanques, #Fort_promegues, #lagarde, #iles_frioul, #Longchamp
     {
-        height: 260px;
+        height: 170px;
         width: 84%;
         margin: 0% 0% 5% 8%;
     }
@@ -1205,45 +1103,15 @@ footer li
     .banniere2
     {
         height: 30%;
-        font-size: 1.3em;
+        font-size: 0.9em;
         font-weight: 800;
-    }
-
-    .banniere2 p 
-    {
-        padding: 6%;
-    }
-
-    #vieux_port img
-    {
-        position: relative;
-        width: 100%;
-        bottom: 90px;
-        left: 0;
-    }
-
-    #Fort_promegues img
-    {
-        bottom: -85%;
-    }
-
-    #iles_frioul img
-    {
-        bottom: -10%;
-    }
-
-    #calanques img
-    {
-        top: -40%;
-        width: auto;
-        left: 0;
     }
 
     #footer
     {
         display: inherit;
         height: fit-content;
-        font-size: 1.4em;
+        font-size: 0.9em;
     }
 
     footer #listes_A_propos h3

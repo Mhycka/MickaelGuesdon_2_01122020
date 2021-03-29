@@ -864,13 +864,13 @@ footer li
 
     #sectionsearch p
     {
-        margin: 0% 8% 7% 8%;
+        margin: 0% 0% 7% 8%;
         font-size: 0.9em;
     }
 
     #searchtool
     {
-        margin: 0% 8% 7% 8%;
+        margin: 0% 0% 7% 8%;
     }
 
     #Filtres
@@ -895,7 +895,7 @@ footer li
 
     #textfiltres
     {
-        width: 100%;
+        width: 90%;
         margin-bottom: 3%;
     }
 
@@ -953,7 +953,7 @@ footer li
 
     #info
     {
-        margin: 0% 8% 8% 8%;
+        margin: 0% 0% 8% 8%;
         align-items: baseline;
     }
 

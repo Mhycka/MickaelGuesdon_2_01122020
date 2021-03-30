@@ -399,7 +399,7 @@ figcaption h3
     margin: 0px;
 }
 
-.imagehorizontale img
+.imagehorizontale img, .imagehorizontale2 img, .imagehorizontale3 img
 {
     position: relative;
     box-sizing: border-box;
@@ -407,11 +407,36 @@ figcaption h3
     border-style: none;  
 }
 
-.imageverticale img
+.imagehorizontale2 img
 {
+    bottom: 50px;
+}
+
+.imagehorizontale3 img
+{
+    bottom: 100px;
+}
+
+.imageverticale img, .imageverticale2 img, .imageverticale3 img
+{
+    position: relative;
+    box-sizing: border-box;
     height: 100%;
     width: 180%;
     object-fit: cover;
+}
+
+.imageverticale2 img
+{
+    bottom: 250px;
+    width: 120%;
+}
+
+.imageverticale3 img
+{
+    width: 220%;
+    bottom: 0;
+    right: 200px;
 }
 
 .fa-star
@@ -712,6 +737,37 @@ footer li
         margin: 0;
     }
 
+    .imageverticale img, .imageverticale2 img, .imageverticale3 img
+    {
+        width: 100%;
+    }
+
+    .imageverticale2 img
+    {
+        bottom: 105px;
+    }
+
+    .imageverticale3 img
+    {
+        right: 120px;
+        width: 220%;
+    }
+
+    .imagehorizontale img, .imagehorizontale2 img, .imagehorizontale3 img
+    {
+        bottom: 25px;
+    }
+
+    .imagehorizontale2 img
+    {
+        bottom: 30px;
+    }
+
+    .imagehorizontale3 img
+    {
+        bottom: 90px;
+    }
+
     i.fas.icondeckstop.fa-chart-line.fa-2x
     {
         margin: 0% 0% 0% 48%;
@@ -973,6 +1029,33 @@ footer li
         margin: 0;
         padding-bottom: 0;
         flex-direction: column-reverse;
+    }
+
+    .imagehorizontale img, .imagehorizontale2 img, .imagehorizontale3 img
+    {
+        bottom: 80px;
+    }
+
+    .imagehorizontale2 img
+    {
+        bottom: 90px;
+    }
+
+    .imagehorizontale3 img
+    {
+        bottom: 120px;
+    }
+
+    .imageverticale2 img
+    {
+        bottom: 210px;
+    }
+
+    .imageverticale3 img
+    {
+        right: 0;
+        bottom: 60px;
+        width: 100%;
     }
 
     aside

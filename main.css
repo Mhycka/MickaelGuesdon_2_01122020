@@ -1110,7 +1110,7 @@ footer li
     #footer
     {
         display: inherit;
-        height: fit-content;
+        height: auto;
         font-size: 0.9em;
     }
 
